@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/style.css">
+    <title>SDLC Models</title>
+</head>
+<body>
+    
+<h2>Accordion</h2>
+
+<button class="accordion">Watrfall</button>
+<div class="panel">
+  
+    <h1>Koskmudel </h1>  <p>
+   <!--.millal.// põhimõte
+   // kus seda kasutatakse .--> 
+   
+    <br> 
+    Koskmudel (ka klassikaline mudel) on esimene kirjeldatud tarkvarasüsteemi elutsükli mudel, mis lähtus tavalistest tootmisprotsessidest ehituses, mehhaanikas vms. Mudeli kirjeldas Winston W. Royce 1970. aastal. Koskmudel on kõige vanem ja kõige rohkem kritiseeritud protsessimudel
+    <br>
+    Põhiidee kohaselt jagatakse tegevused nii, et iga tegevus toimub jadamisi eraldi etapina. Royce jagas protsessi järgmisteks põhietappideks (tasub tähele panna, et etappide nimekiri varieerub erinevate autorite esituses):
+<br>
+    1. Nõuete määratlemine. See etapp võib olla ka jaotatud kaheks - süsteemi analüüs (kõik see, mis konkreetset tarkvara ümbritseb) ja nõuete analüüs. Dokumenteeritakse süsteemi käitumine, jõudlus, liides jne
+    <br>
+    2. Süsteemi ja tarkvara kavandamine. Keskendub põhilistele programmi omadustele nagu andmestruktuurid, tarkvara arhitektuur, liideste omadused ja protseduurilised ning algoritmilised detailid. Projekti kvaliteeti on võimalik hinnata. Tulemus dokumenteeritakse.
+    <br>
+    3. Teostus ja moodulite testimine. Projektis kirjeldatud süsteem programmeeritakse moodulite ja programmide kogumina ja need testitakse eraldi. Mida detailsem on projekt, seda lihtsam ja mehhaanilisem saab olla teostuse etapp.
+    <br>
+    4. Integratsioon ja süsteemi testimine. - programmid ja moodulid integreeritakse ning testitakse kogu süsteemi, peale testimist antakse toode kliendile. Testimisel keskendutakse nii loogilistele detailidele kui ka sellele, kas süsteem oma funktsionaalsuse osas nõudeid täidab (valideerimine).
+    <br>
+    5. Kasutamine ja hooldus - on tavaliselt kõige pikem faas. Süsteemi muudetakse, kui kasutajad avastavad vigu, ümbrus ja töökeskkond muutuvad või klient vajab uut funktsionaalsust. Faas kordab kõiki eelnevaid faase olemasoleva süsteemi muutmise raames.
+    <br>
+    Iga faasi tulemiks on üks või mitu dokumenti, mis kinnitatakse. Järgmine faas ei tohiks alata enne, kui eelmine on lõpetatud. Faasidel on teatav ülekate ja info edastamine ühest teise.
+<br>
+Koskmudel on sobilik suurtele süsteemidele, mida arendatakse mitmes erinevas kohas korraga. Sel juhul lubab eelnev korralik planeerimine töid paremini koordineerida
+<br>
+<img src="images/waterfall.png" alt="" width="500px">
+</div>
+
+
+<button class="accordion">Iterative</button>
+<div class="panel">
+    <h1>Iteratiivne arendus</h1>
+  <p>
+    Iteratiivne arendus on nö muutmisstrateegia, kus nähakse ette olemasolevate süsteemi osade ümbertegemine ja parandamine.
+    Alternatiivne strateegia oleks planeerida tegevused selliselt, et kõik tehtaks õigesti esimesel katsel
+    <br>
+    Ian Sommerville järgi on iteratiivne arendusmudel pigem üldine nimetus mitmele nn hübriidmudelile (sh inkrementaal- ja spiraalmudel). Sõna "iteratiivne" rõhutab seda, et tegevused selles mudelis korduvad.
+    </p>
+<br>
+<img src="images/incrimental.png" alt=""width="500px">
+</div>
+
+<button class="accordion">V-Model</button>
+<div class="panel">
+    <h1>V-Mudel</h1>
+  <p>V-mudeli puhul on testimise ja arenduse etapp planeeritud paralleelselt. Ühest küljest tegeletakse kontrollifaasiga ning teisalt valideerimisega. V-mudel liitub kodeerimisfaasiga.
+    
+    </p>
+<br>
+<img src="images/v-model.png" alt=""width="500px">
+</div>
+<button class="accordion">Agile </button>
+<div class="panel">
+    <h1>Agiilne mudel</h1>
+  <p>
+    Agiilse tarkvaraarenduse levimise algus läheb 2001 aastasse, kui senise üliplaanipärase arenduse vastased kirjutasid alla "The Agile Manifesto"-le, mille kõige olulisemates punktides rõhutakse inimesele ja inimeste vahelisele suhtlemisele:
+    <br>
+   <li>Inimesed ja suhtlemine on tähtsamad kui protsessid ja tööriistad.</li>
+   <li>Töötav tarkvara on tähtsam kui dokumentatsioon.</li>
+   <li>Koostöö kliendiga on tähtsam kui läbirääkimised lepingu üle.</li>
+   <li>Koostöö kliendiga on tähtsam kui läbirääkimised lepingu üle.</li>
+   <li>Muudatussoovidele vastutulek on tähtsam kui plaani järgmine.</li>
+
+   Enam arvestatakse tagasiside (koormustestimine, kasutajate arvamus jm) käigus saadud infoga kui loodetakse hoolika etteplaneerimise tehnikale. Põhitähelepanu on inimestel, sh kasutajatel, ja pideval testimisel. Öeldakse, et agiilmeetoditega saavutatakse parem tulemus sama raha eest, aga agiilmeetoditega on raskem ette planeerida, millal tarkvara mingi funktsioon valmis saab - „Agile process will provide the most bang for the buck, but won't say exactly when that bang will be".
+   <br>
+   Tuntumad ja levinumad agiilsed arendusmeetodid on ekstreemprogrammeerimine (XP), Scrum, Feature Driven Development (FDD), Open Unified Process (OpenUP) jt
+</p>
+<br>
+<img src="images/agile.png" alt=""width="500px">
+</div>
+<button class="accordion">Spiral </button>
+<div class="panel">
+    <h1>Spiraal mudel</h1>
+  <p>
+    Spiraalmudelit kirjeldas esimest korda Barry Boehm oma 1986 a. artiklis.
+    <br>
+    Protsessi kulgemist kujutab spiraal. Esimene kordus võib olla näiteks seotud süsteemi teostatavuse uurimisega, teine nõudmiste kirjeldamisega, järgmine kavandamisega jne. Mitu kordust on enamasti seotud tarkvara realiseerimisega, kus tema ehitamine toimub inkrementaalselt. Kuid kindlasti ei tohiks spiraali korduseid võrdsustada tavapäraste arendusprotsessi faasidega. Iga kordus on jaotatud 3 kuni 6 sektorisse (erinevad autorid jagavad erinevalt). Iga kordus algab lähema eesmärgi kavandamise ja riskide hindamisega ning lõppeb nö kliendiga - ehk eesmärk peab saama täidetud ja kontrollitud. Sektorite töömahukus ei pruugi olla ühesugune. Boehm'i järgi on sektoreid neli
+    <br>
+    1. Eesmärkide seadmine (Objective setting) - määratakse selle faasi ehk korduse eesmärgid, piirangud protsessis, tulemused, juhtimisplaan, võimalikud riskid ning alternatiivsed strateegiad lähtudes riskidest.
+    <br>
+    2. Riskide hindamine ja maandamine (Risk assessment and reduction) - iga leitud riski jaoks tehakse analüüs, võetakse midagi ette riskide maandamiseks (nt risk, et nõudmised pole adekvaatsed: tehakse prototüüp)
+    <br>
+    3. Arendus ja valideerimine (Development and validation) - valitakse arendusmudel, mis lähtub hinnatud riskidest (mudel peab olema selline, mis riske vähendada aitab). Nt kui kasutajaliides on suurim risk, siis võib aidata prototüüpide tegemine.
+    <br>
+    4. Planeerimine (Planning) - projekt vaadatakse üle ja tehakse otsus, kas jätkata järgmisel kordusel, kui otsustatakse jätkata, tehakse järgmise faasi jaoks plaan.
+    <br>
+    Selle mudeli kõige olulisem erinevus teistest on riskidega arvestamine. Risk - so võimalus, et midagi saab untsu minna. Riskide realiseerumise tõttu ületatakse tähtajad ja maksumus, seepärast peab riskidega arvestama ning võtma midagi ette nende maandamiseks.
+
+    </p>
+    <br>
+    <img src="images/spiral.png" alt=""width="500px">
+</div>
+<button class="accordion">Prototyping</button>
+<div class="panel">
+    <h1>Prototüüpimine</h1>
+  <p>Prototüüp on süsteemi algne versioon, mida kasutatakse disaini võimaluste katsetamiseks ning ideede demonstreerimiseks. Prototüüpe saab kasutada erinevates arenduse faasides. Näiteks nõuete analüüsi etapil nende leidmiseks ja valideerimiseks; disaini etapil valikuvõimaluste uurimiseks ning kasutajaliidese kavandamiseks
+      <br>
+      Kasu prototüüpimisest on: parem süsteemi kasutusmugavus, täpsem ühildumine kasutaja tegelike vajadustega; parem kvaliteet ja hooldatavus ning väiksem vaev arendamisel.
+      <br>
+      Prototüübi arendamisel on oluline, et see saaks loodud kiiresti, kasutades selleks abivahendeid (kiire prototüüpimise keeled ja tööriistad). Prototüüp ei pea sisaldama kogu funktsionaalsust - ta peab keskenduma sellele, millest ei ole hästi aru saadud; prototüübis ei pea olema vigade kontrolli ning prototüüp on suunatud funktsionaalsetele nõuetele (mitte näiteks turvalisuse probleemidele)
+      <br>
+      Prototüüpimist võib teha erineval põhimõttel - näiteks ühekordne prototüüpimine (Throw away prototyping), evolutsiooniline prototüüpimine (Evolutionary prototyping), lisanduv prototüüpimine (Incremental prototyping)
+      <br>
+      <img src="images/proto.png" alt="" width="700px">
+  </p>
+</div>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+</script>
+</body>
+</html>
