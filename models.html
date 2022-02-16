@@ -19,9 +19,10 @@
    // kus seda kasutatakse .--> 
    
     <br> 
-    Koskmudel (ka klassikaline mudel) on esimene kirjeldatud tarkvarasüsteemi elutsükli mudel, mis lähtus tavalistest tootmisprotsessidest ehituses, mehhaanikas vms. Mudeli kirjeldas Winston W. Royce 1970. aastal. Koskmudel on kõige vanem ja kõige rohkem kritiseeritud protsessimudel
+    Koskmudel (ka klassikaline mudel) on esimene kirjeldatud tarkvarasüsteemi elutsükli mudel, mis lähtus tavalistest tootmisprotsessidest ehituses, mehhaanikas vms. Mudeli kirjeldas Winston W. Royce 1970. aastal.
+    <br> Koskmudel on kõige vanem ja kõige rohkem kritiseeritud protsessimudel
     <br>
-    Põhiidee kohaselt jagatakse tegevused nii, et iga tegevus toimub jadamisi eraldi etapina. Royce jagas protsessi järgmisteks põhietappideks (tasub tähele panna, et etappide nimekiri varieerub erinevate autorite esituses):
+    Põhiidee kohaselt jagatakse tegevused nii, et iga tegevus toimub jadamisi eraldi etapina. Royce jagas protsessi järgmisteks põhietappideks:
 <br>
     1. Nõuete määratlemine. See etapp võib olla ka jaotatud kaheks - süsteemi analüüs (kõik see, mis konkreetset tarkvara ümbritseb) ja nõuete analüüs. Dokumenteeritakse süsteemi käitumine, jõudlus, liides jne
     <br>
@@ -37,7 +38,7 @@
 <br>
 Koskmudel on sobilik suurtele süsteemidele, mida arendatakse mitmes erinevas kohas korraga. Sel juhul lubab eelnev korralik planeerimine töid paremini koordineerida
 <br>
-<img src="images/waterfall.png" alt="" width="500px">
+<img src="images/waterfall.png" alt="Koskmudel" width="500px">
 </div>
 
 
@@ -49,6 +50,11 @@ Koskmudel on sobilik suurtele süsteemidele, mida arendatakse mitmes erinevas ko
     Alternatiivne strateegia oleks planeerida tegevused selliselt, et kõik tehtaks õigesti esimesel katsel
     <br>
     Ian Sommerville järgi on iteratiivne arendusmudel pigem üldine nimetus mitmele nn hübriidmudelile (sh inkrementaal- ja spiraalmudel). Sõna "iteratiivne" rõhutab seda, et tegevused selles mudelis korduvad.
+    <br>
+  <li>Süsteemiarendus on jaotatud paljudeks miniarendusprojektideks</li>
+  <li>Osasüsteeme ehitatakse järjest, et saada lõplik kogusüsteem</li>
+  <li>Esmalt lahendatakse kõrgeima prioriteedi nõue</li>
+  <li>Kui nõue on välja töötatud, külmutatakse selle juurdekasvu nõue</li>
     </p>
 <br>
 <img src="images/incrimental.png" alt=""width="500px">
@@ -57,11 +63,18 @@ Koskmudel on sobilik suurtele süsteemidele, mida arendatakse mitmes erinevas ko
 <button class="accordion">V-Model</button>
 <div class="panel">
     <h1>V-Mudel</h1>
-  <p>V-mudeli puhul on testimise ja arenduse etapp planeeritud paralleelselt. Ühest küljest tegeletakse kontrollifaasiga ning teisalt valideerimisega. V-mudel liitub kodeerimisfaasiga.
-    
-    </p>
+  <p>
+    V mudel on väga distsiplineeritud SDLC-mudel, milles iga arendusfaasiga paralleelselt toimub testimise faas.
+    <br> V-mudel on koskmudeli laiendus, milles testitakse igas etapis paralleelselt arendusega järjestikusel viisil.
+    <br> Seda tuntakse valideerimis- või kontrollimudelina.
+     </p>
 <br>
 <img src="images/v-model.png" alt=""width="500px">
+<p>
+  <li>Mudeli vasakpoolne külg on tarkvaraarenduse elutsükkel – SDLC</li>
+  <li>Mudeli parem pool on Tarkvaratesti elutsükkel – STLC</li>
+  <li>Kogu kujund näeb välja nagu V, sellest ka nimi V – mudel</li>
+</p>
 </div>
 <button class="accordion">Agile </button>
 <div class="panel">
