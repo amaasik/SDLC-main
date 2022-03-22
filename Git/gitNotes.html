@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <style>
+        code{
+            background-color: black;
+            color: white;
+            font-size: 1.5rem;
+        }
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Git and GitHub</title>
+</head>
+<body>
+    <div>
+        <h1>Initialization</h1>
+        <p>Navigate to project folder</p>
+        <h2>Command</h2>
+        <code>$git init</code>
+        <p>Initalizes a local Git repositiry</p>
+        <code>$git status</code>
+        <p>Show the working tree status</p>
+    </div>
+    <hr>
+  
+    <div>
+        <h1>Commits</h1>
+        <p>Browse and inspect the evolution of project files</p>
+        <h2>Command</h2>
+        <code>$git add .</code>
+        <p>Add file contents to the index
+
+        </p>
+        <code>$git commit -m "..."</code>
+        <p>Record changes to the repository</p>
+        <code>$git log</code>
+        <p>Show commit logs</p>
+        <code>$git checkout ... .</code>
+        <p>Switch branches or restore working tree files</p>
+        <code>$git checkout -- .</code>
+        <p>Specifying -b causes a new branch to be created as if git-branch were called and then checked out.</p>
+        <code>$git reset --hard commitIDwhereYouWantGoBack</code>
+        <p>Discards all history and changes back to the specified commit</p>
+    </div>
+   
+    <hr>
+    <div>
+        <h1>Branches</h1>
+        <p>Branches are an important part of working with Git. Any commits you make will be made on the branch you’re currently “checked out” to. Use git status to see which branch that is.</p>
+        <h2>Command</h2>
+        <code>$git branch</code>
+        <p>Shows branch</p>
+        <code>$git checkout ...</code>
+        <p>greats new branch named "new-feature"</p>
+        <code>$git checkout -b new-feature</code>
+        <p>greats new branch named "new-feature"</p>
+        <code>$git master</code>
+        <p>Change back to master branch</p>
+        <code>$git merge ...</code>
+        <p>Join two or more development histories together </p>
+        <code>$git branch -D new-feature</code>
+        <p>Deletes branch new-feature</p>
+    </div>
+    <hr>
+   
+
+</body>
+</html>
